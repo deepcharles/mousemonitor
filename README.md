@@ -26,30 +26,6 @@ import matplotlib.pyplot as plt
 from mousemonitor import opt_state_sequence_binary
 ```
 
-### Helper functions for plotting
-
-
-```python
-def fig_ax():
-    fig, ax = plt.subplots(figsize=(15, 6))
-    ax.set_xmargin(0)
-    ax.set_xlabel("Time (h)")
-    ax.set_xticks([1, 3, 5, 7, 9, 11])
-    ax.set_ylabel("Active - Inactive (min)")
-    ax.set_ylim(-500, 500)
-    ax.axhline(0, color="k", alpha=0.1)
-    return fig, ax
-
-
-def fig_ax_timeline():
-    fig, ax = plt.subplots(figsize=(15, 1))
-    ax.set_xmargin(0)
-    ax.set_xlabel("Time (h)")
-    ax.set_xticks([1, 3, 5, 7, 9, 11])
-    ax.set_yticks([])
-    return fig, ax
-```
-
 ### Load data and define parameters
 
 
